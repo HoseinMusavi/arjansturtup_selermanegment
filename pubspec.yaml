@@ -1,0 +1,86 @@
+name: arjansturtup_selermanegment
+description: "اپلیکیشن مدیریت فروشندگان ارجان اپ — Merchant management application for Arjan platform."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_bloc: ^8.1.6
+
+  # Networking
+  dio: ^5.7.0
+  dio_cookie_manager: ^3.1.1
+  cookie_jar: ^4.0.8
+
+  # Dependency injection
+  get_it: ^8.0.3
+
+  # Routing
+  go_router: ^14.6.2
+
+  # Secure storage for session credentials
+  flutter_secure_storage: ^9.2.3
+
+  # HTML fragment parsing — data layer only
+  html: ^0.15.4
+
+  # Formatting & localization utilities
+  intl: ^0.20.1
+
+  # Persian (Jalali) calendar support
+  shamsi_date: ^0.14.0
+
+  # Image loading & caching
+  cached_network_image: ^3.4.1
+
+  # Cross-platform file / image picking
+  file_picker: ^8.1.7
+
+  # Connectivity awareness
+  connectivity_plus: ^6.1.1
+
+  # Skeleton loading placeholders
+  shimmer: ^3.0.0
+
+  # Value equality
+  equatable: ^2.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+  # Testing
+  bloc_test: ^9.1.7
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+
+  fonts:
+    - family: Vazirmatn
+      fonts:
+        - asset: assets/fonts/Vazirmatn-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Vazirmatn-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Vazirmatn-Bold.ttf
+          weight: 700
